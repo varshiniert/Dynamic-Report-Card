@@ -36,7 +36,7 @@ public class ReportCardService {
         Map<String, Object> report = new LinkedHashMap<>();
         Map<String, Map<String, List<Exam>>> grouped = new TreeMap<>();
 
-        // Group by term -> examId -> list of exams
+        
         for (Exam exam : exams) {
             String term = exam.getTerm();
             String examId = exam.getExamId();
